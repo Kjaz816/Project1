@@ -24,14 +24,35 @@ public class SceneManager {
 	    stage.setScene(new Scene(new Group()));
 
 	    // Show menu scene.
-	    switchToMenuScene();
+	    switchToDashboardScene();
 	    stage.show();
 	  }
 
 	  /** Show the dashboard scene to the user. */
-	  public static void switchToMenuScene() {
+	  public static void switchToDashboardScene() {
 	    changeScene("Dashboard");
 	  }
+	  
+	  /** Show the notes scene to the user. */
+	  public static void switchToNotesScene() {
+	    changeScene("Notes");
+	  }
+	  
+	  /** Show the todo scene to the user. */
+	  public static void switchToTodoScene() {
+	    changeScene("Todo");
+	  }
+
+	  /** Show the drawboard scene to the user. */
+	  public static void switchToDrawboardScene() {
+	    changeScene("Drawboard");
+	  }
+	  
+	  /** Show the timer scene to the user. */
+	  public static void switchToTimerScene() {
+	    changeScene("Timer");
+	  }
+
 
 
 	  /**
