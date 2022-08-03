@@ -1,4 +1,4 @@
-package scene;
+package application.scene;
 
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
@@ -23,34 +23,34 @@ public class SceneManager {
 	    // Load empty to allow scene switch.
 	    stage.setScene(new Scene(new Group()));
 
-	    // Show menu scene.
+	    // Show dashboard scene.
 	    switchToDashboardScene();
 	    stage.show();
 	  }
 
 	  /** Show the dashboard scene to the user. */
 	  public static void switchToDashboardScene() {
-	    changeScene("Dashboard");
+		  changeScene("Dashboard");
 	  }
 	  
 	  /** Show the notes scene to the user. */
 	  public static void switchToNotesScene() {
-	    changeScene("Notes");
+		  changeScene("Notes");
 	  }
 	  
 	  /** Show the todo scene to the user. */
 	  public static void switchToTodoScene() {
-	    changeScene("Todo");
+		  changeScene("Todo");
 	  }
 
 	  /** Show the drawboard scene to the user. */
 	  public static void switchToDrawboardScene() {
-	    changeScene("Drawboard");
+		  changeScene("Drawboard");
 	  }
 	  
 	  /** Show the timer scene to the user. */
 	  public static void switchToTimerScene() {
-	    changeScene("Timer");
+		  changeScene("Timer");
 	  }
 
 
@@ -66,9 +66,7 @@ public class SceneManager {
 	      // Load resources.
 	      FXMLLoader loader = new FXMLLoader(SceneManager.class.getResource("fxml/" + name + ".fxml"));
 	      Parent root = loader.load();
-
 	      String css = SceneManager.class.getResource("css/" + name + ".css").toExternalForm();
-
 	      // Show new scene.
 	      Scene scene = stage.getScene();
 	      scene.setRoot(root);
