@@ -8,6 +8,7 @@
 	-fx-background-color: #332E43;
 	-fx-text-fill: #FFFFFF;
 	-fx-border-style: hidden;
+	-fx-background-radius: 0 40 40 0;
 }
 
 .button_menu {
@@ -19,12 +20,10 @@
 
 .button_menu:hover {
 	-fx-text-fill: #FFFFFF80;
-	-fx-background-color: transparent;
 }
 
 .button_menu:pressed {
 	-fx-text-fill: #FFFFFF;
-	-fx-background-color: transparent;
 }
 
 .button_focus {
@@ -37,12 +36,30 @@
 .button_main {
 	-fx-background-color: #5A59B1;
 	-fx-text-fill: #FFFFFF;
+	-fx-font-size: 40px;
+	-fx-font-family: 'Space Mono', monospace;
+	-fx-border-style: hidden;
+	-fx-background-radius: 30px;
+	-fx-effect: dropshadow( gaussian, #9d9d9d, 10, 0.5, 5px, 5px);
 }
 
 .button_main:hover {
-	
+	-fx-background-color: #494794;
 }
 
-.button_main:focus {
-	
+.button_main:pressed {
+	-fx-background-color: #3F3E80;
+	-fx-effect: none;
+}
+
+.label_title {
+	-fx-text-fill: #000000;
+	-fx-font-size: 100px;
+	-fx-font-family: 'Space Mono', monospace;
+}
+
+.label_subtitle {
+	-fx-text-fill: #000000;
+	-fx-font-size: 50px;
+	-fx-font-family: 'Space Mono', monospace;	
 }
