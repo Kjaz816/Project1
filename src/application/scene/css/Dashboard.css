@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 .root {
 	-fx-background-color: #CCCCCC;
@@ -8,15 +8,13 @@
 	-fx-background-color: #332E43;
 	-fx-text-fill: #FFFFFF;
 	-fx-border-style: hidden;
-	-fx-border-radius: 0px 50px 50px 0px;
 }
 
 .button_menu {
 	-fx-text-fill: #FFFFFF60;
 	-fx-background-color: transparent;
-	-fx-alignment: left;
-	-fx-font-size: 40px;
-	-fx-font-family: 'Source Code Pro', monospace;
+	-fx-font-size: 32px;
+	-fx-font-family: 'Space Mono', monospace;
 }
 
 .button_menu:hover {
@@ -32,9 +30,8 @@
 .button_focus {
 	-fx-text-fill: #FFFFFF;  
 	-fx-background-color: transparent;
-	-fx-alignment: left;
-	-fx-font-size: 40px;
-	-fx-font-family: 'Source Code Pro', monospace;
+	-fx-font-size: 32px;
+	-fx-font-family: 'Space Mono', monospace;
 }
 
 .button_main {

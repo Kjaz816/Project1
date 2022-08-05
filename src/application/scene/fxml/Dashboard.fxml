@@ -5,75 +5,90 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="982.0" prefWidth="1512.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene.Dashboard">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="926.0" layoutY="3.0" prefHeight="982.0" prefWidth="1512.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-659.0" AnchorPane.topAnchor="0.0" />
-      <VBox fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="982.0" prefWidth="350.0" styleClass="menu" stylesheets="@../css/Dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ImageView fitHeight="82.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/logo_full.png" />
-               </image>
-               <VBox.margin>
-                  <Insets top="40.0" />
-               </VBox.margin>
-            </ImageView>
-            <Region prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-            <Button fx:id="button_dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="63.0" prefWidth="405.0" styleClass="button_focus" text="  dashboard">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
-                     <image>
-                        <Image url="@../assets/home_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="button_notes" mnemonicParsing="false" onAction="#notes" prefHeight="50.0" prefWidth="405.0" styleClass="button_menu" text="  notes">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/notes_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="button_todo" mnemonicParsing="false" onAction="#todo" prefHeight="50.0" prefWidth="405.0" styleClass="button_menu" text="  to-do">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/todo_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="button_drawboard" mnemonicParsing="false" onAction="#drawboard" prefHeight="50.0" prefWidth="405.0" styleClass="button_menu" stylesheets="@../css/Dashboard.css" text="  drawboard">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/drawboard_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="button_timer" mnemonicParsing="false" onAction="#timer" prefHeight="50.0" prefWidth="405.0" styleClass="button_menu" text="  timer">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/time_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Region prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-            <ImageView fitHeight="339.0" fitWidth="345.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/image_study_nobg.png" />
-               </image>
-            </ImageView>
-         </children>
-      </VBox>
+      <BorderPane layoutX="313.0" layoutY="195.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="810.0" prefWidth="250.0" style="-fx-background-radius: 0 40 40 0;" styleClass="menu" stylesheets="@../css/Dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="32.0" layoutY="16.0" prefHeight="810.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/logo_full.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Region maxHeight="80.0" minHeight="0.0" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <Button alignment="TOP_LEFT" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_focus" text="dashboard">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/dashboard_icon_big.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_menu" text="notes">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/notes_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_menu" text="to-do">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/todo_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_menu" text="drawboard">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/dashboard_icon_big.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_menu" text="timer">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/time_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Region minWidth="0.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image_study_nobg.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
    </children>
 </AnchorPane>
