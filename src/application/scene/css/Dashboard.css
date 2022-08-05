@@ -1,37 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
 .root {
 	-fx-background-color: #CCCCCC;
 }
 
-#menu {
+.menu {
 	-fx-background-color: #332E43;
 	-fx-text-fill: #FFFFFF;
+	-fx-border-style: hidden;
+	-fx-border-radius: 0px 50px 50px 0px;
 }
 
-#button_menu {
+.button_menu {
 	-fx-text-fill: #FFFFFF60;
+	-fx-background-color: transparent;
+	-fx-alignment: left;
+	-fx-font-size: 40px;
+	-fx-font-family: 'Source Code Pro', monospace;
 }
 
-#button_menu:hover {
+.button_menu:hover {
 	-fx-text-fill: #FFFFFF80;
+	-fx-background-color: transparent;
 }
 
-#button_menu:pressed {
+.button_menu:pressed {
 	-fx-text-fill: #FFFFFF;
+	-fx-background-color: transparent;
 }
 
-#button_focus {
-	-fx-text-fill: #FFFFFF;
+.button_focus {
+	-fx-text-fill: #FFFFFF;  
+	-fx-background-color: transparent;
+	-fx-alignment: left;
+	-fx-font-size: 40px;
+	-fx-font-family: 'Source Code Pro', monospace;
 }
 
-#button_main {
+.button_main {
 	-fx-background-color: #5A59B1;
 	-fx-text-fill: #FFFFFF;
 }
 
-#button_main:hover {
+.button_main:hover {
 	
 }
 
-#button_main:focus {
+.button_main:focus {
 	
 }
