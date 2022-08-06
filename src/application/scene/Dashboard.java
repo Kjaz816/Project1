@@ -5,15 +5,14 @@ import javafx.scene.control.Button;
 
 public class Dashboard {
 	  @FXML private Button button_dashboard;
-
 	  @FXML private Button button_notes;
-
 	  @FXML private Button button_todo;
-
 	  @FXML private Button button_drawboard;
-	  
 	  @FXML private Button button_timer;
-	  
+	  @FXML private Button button_main_notes;
+	  @FXML private Button button_main_todo;
+	  @FXML private Button button_main_drawboard;
+	  @FXML private Button button_main_timer;
 	  /** Click handler for the notes button. */
 	  @FXML
 	  private void notes() {

@@ -12,18 +12,19 @@
 }
 
 .button_menu {
-	-fx-text-fill: #FFFFFF60;
+	-fx-text-fill: #FFFFFF;
 	-fx-background-color: transparent;
 	-fx-font-size: 32px;
 	-fx-font-family: 'Space Mono', monospace;
+	-fx-opacity: 0.6;
 }
 
 .button_menu:hover {
-	-fx-text-fill: #FFFFFF80;
+	-fx-opacity: 0.8;
 }
 
 .button_menu:pressed {
-	-fx-text-fill: #FFFFFF;
+	-fx-opacity: 1;
 }
 
 .button_focus {
