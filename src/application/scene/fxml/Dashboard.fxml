@@ -29,8 +29,8 @@
                               <Insets right="15.0" top="5.0" />
                            </VBox.margin>
                         </ImageView>
-                        <Region maxHeight="80.0" minHeight="0.0" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                        <Button graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_focus" text="dashboard">
+                        <Region maxHeight="100.0" minHeight="0.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="buttonDashboard" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" styleClass="button_focus" text="dashboard">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
@@ -41,7 +41,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="button_notes" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#notes" prefHeight="60.0" styleClass="button_menu" text="notes">
+                        <Button fx:id="buttonNotes" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#notes" prefHeight="60.0" styleClass="button_menu" text="notes">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -49,7 +49,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="button_todo" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#todo" prefHeight="60.0" styleClass="button_menu" text="to-do">
+                        <Button fx:id="buttonTodo" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#todo" prefHeight="60.0" styleClass="button_menu" text="to-do">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -57,7 +57,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="button_drawboard" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#drawboard" prefHeight="60.0" styleClass="button_menu" text="drawboard">
+                        <Button fx:id="buttonDrawboard" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#drawboard" prefHeight="60.0" styleClass="button_menu" text="drawboard">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -65,7 +65,7 @@
                                  </image></ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="button_timer" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#timer" prefHeight="60.0" styleClass="button_menu" text="timer">
+                        <Button fx:id="buttonTimer" graphicTextGap="20.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#timer" prefHeight="60.0" styleClass="button_menu" text="timer">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -110,7 +110,7 @@
                         <Region maxHeight="-Infinity" prefHeight="50.0" prefWidth="1049.0" VBox.vgrow="ALWAYS" />
                         <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="button_main_notes" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#notes" prefHeight="200.0" prefWidth="400.0" style="-fx-border-radius: 30px;" styleClass="button_main" text="notes">
+                              <Button fx:id="buttonMainNotes" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#notes" prefHeight="200.0" prefWidth="400.0" style="-fx-border-radius: 30px;" styleClass="button_main" text="notes">
                                  <graphic>
                                     <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -128,7 +128,7 @@
                                     </DropShadow>
                                  </effect>
                               </Button>
-                              <Button fx:id="button_main_todo" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#todo" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="to-do">
+                              <Button fx:id="buttonMainTodo" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#todo" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="to-do">
                                  <graphic>
                                     <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -143,7 +143,7 @@
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="button_main_drawboard" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#drawboard" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="drawboard">
+                              <Button fx:id="buttonMainDrawboard" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#drawboard" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="drawboard">
                                  <graphic>
                                     <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -154,7 +154,7 @@
                                     <Insets left="50.0" right="10.0" top="10.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button fx:id="button_main_timer" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#timer" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="timer">
+                              <Button fx:id="buttonMainTimer" graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#timer" prefHeight="200.0" prefWidth="400.0" style="-fx-background-radius: 30px;" styleClass="button_main" text="timer">
                                  <graphic>
                                     <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
