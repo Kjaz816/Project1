@@ -26,6 +26,7 @@ Project Setup:
 - Click on the "User Libraries..." button, and create a new user library called "JavaFX"
 - Select "Add External JARs...", and select all of the .jar files in the JavaFX library folder (openjfx-18.0.2_windows-x64_bin-sdk\javafx-sdk-18.0.2\lib)
 - Go to the project's Run Configurations -> Arguments, and add "--module-path "\path\to\javafx-sdk-18.0.2\lib" --add-modules javafx.controls,javafx.fxml
+
 Note: Your JavaFX version may be different, make sure to check the library folder and edit the version in the arguments accordingly
 
 ## Built With
