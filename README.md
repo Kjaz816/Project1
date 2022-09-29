@@ -17,7 +17,17 @@ Nice to have features:
 - Spotify integration 
 
 ## Getting Started
-You’ll need java, [javaFX](https://openjfx.io/openjfx-docs/) and [scenebuilder](https://gluonhq.com/products/scene-builder/) installed to be able to run this project. Then open the project in your IDE of choice and run it. 
+This project was built in Eclipse using Java.
+For best performance and support, use the Eclipse Java IDE.
+You'll also need to download[javaFX](https://openjfx.io/openjfx-docs/), and the e(fx)clipse plugin, downloadable from the inbuilt Eclipse marketplace.
+
+Project Setup:
+- Once you've opened up the project in Eclipse, go to the Project's Properties -> Java Build Path -> Module -> Add Library -> User Library
+- Click on the "User Libraries..." button, and create a new user library called "JavaFX"
+- Select "Add External JARs...", and select all of the .jar files in the JavaFX library folder (openjfx-18.0.2_windows-x64_bin-sdk\javafx-sdk-18.0.2\lib)
+- Go to the project's Run Configurations -> Arguments, and add "--module-path "\path\to\javafx-sdk-18.0.2\lib" --add-modules javafx.controls,javafx.fxml
+Note: Your JavaFX version may be different, make sure to check the library folder and edit the version in the arguments accordingly
+
 ## Built With
 -	Java
 -	JavaFX
