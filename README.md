@@ -19,7 +19,7 @@ Nice to have features:
 ## Getting Started
 This project was built in Eclipse using Java.
 For best performance and support, use the Eclipse Java IDE.
-You'll also need to download[javaFX](https://openjfx.io/openjfx-docs/), and the e(fx)clipse plugin, downloadable from the inbuilt Eclipse marketplace.
+You'll also need to download [JavaFX](https://openjfx.io/openjfx-docs/), and the e(fx)clipse plugin, downloadable from the inbuilt Eclipse marketplace.
 
 Project Setup:
 - Once you've opened up the project in Eclipse, go to the Project's Properties -> Java Build Path -> Module -> Add Library -> User Library
